@@ -40,10 +40,13 @@
 
 #include <semaphore.h>
 
+#include <sys/file.h>
+
 extern char **environ;
 
 extern void is_err(ssize_t ret, char *opt); 
 extern void is_null_err(void *ret, char *opt); 
+extern void print_err(char *msg, int line, int err_no);
 
 
 // 系统IO函数

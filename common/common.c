@@ -13,3 +13,9 @@ void is_null_err(void *ret, char *opt) {
         exit(-1);
     }
 }
+
+void print_err(char *msg, int line, int err_no)
+{
+    printf("%d,%s:%s\n", line, msg, strerror(err_no));
+    exit(-1);
+}
