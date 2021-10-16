@@ -44,6 +44,8 @@
 
 #include <poll.h>
 
+#include <sys/mman.h>
+
 extern char **environ;
 
 extern void is_err(ssize_t ret, char *opt); 
